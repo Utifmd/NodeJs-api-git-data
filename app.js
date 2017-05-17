@@ -23,8 +23,17 @@ let request = https.request(options, (response) => {
         body = body + data // parsing byte ke string
     })
     response.on('end', () => {
-        console.log(body) //hasil isi json
+        //console.log(body) //hasil isi json
+        
+        let profile = JSON.parse(body)
+        //console.log(profile) //hasil isi json setelah di parse
+        //console.log(typeof profile) //check type data 'profile'
+        
+        //console.log(profile.created_at) // mengambil satu data dari object json
+        
+
     })
+
 })
 
 request.end() //di http/s ada method end() dan on()

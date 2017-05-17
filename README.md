@@ -7,5 +7,5 @@ Solution: gunakan NodeJs to connect ke api.gihub.com for get data
 
 * [x] TODO: Connect ke api.github.com
 * [x] TODO: Read the data
-* [] TODO: Parse the data
+* [x] TODO: Parse the data
 * [] TODO: Print the data out
