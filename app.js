@@ -1,11 +1,3 @@
-//Problem: kita butuh aplikasi pencari data github profile
-//Solution: gunakan NodeJs to connect ke api.gihub.com for get data
-
-// TODO: Connect ke api.github.com
-// TODO: Read the data
-// TODO: Parse the data
-// TODO: Print the data out
-
 /*let CallThis = (setring) => {
     console.log('fungsi ini anon' + ' ' + setring)
 }
@@ -23,11 +15,19 @@ const options = {
     }
 }
 
-let request = https.request(options, (Response) => {
-    console.log('Mendapatkan respon ' + Response.statusCode)
+let request = https.request(options, (response) => {
+    //console.log('Mendapatkan respon ' + response.statusCode)
+    let body = '' // declare string 
+    response.on('data', (data)  => {
+        //console.log(data)
+        body = body + data // parsing byte ke string
+    })
+    response.on('end', () => {
+        console.log(body) //hasil isi json
+    })
 })
 
-request.end() //di http ada method end() dan on()
+request.end() //di http/s ada method end() dan on()
 request.on('error', (err) =>{
     console.log(err)
 })
