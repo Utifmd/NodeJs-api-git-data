@@ -8,4 +8,4 @@ Solution: gunakan NodeJs to connect ke api.gihub.com for get data
 * [x] TODO: Connect ke api.github.com
 * [x] TODO: Read the data
 * [x] TODO: Parse the data
-* [] TODO: Print the data out
+* [x] TODO: Print the data out
