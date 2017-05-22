@@ -11,8 +11,8 @@ profiles.map(user => profile.get(user)) // run dengan node app.js utifmd rizafah
 
 profiles.map(user => {
     return profile.get(user)
-})
-*/
+})*/
+
 // map data 
 /*let array = [1,2,3]
 let result = array.map(item => {

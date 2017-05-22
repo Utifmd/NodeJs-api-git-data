@@ -117,5 +117,27 @@
         "key": "enter",
         "command": "-acceptSelectedSuggestionOnEnter",
         "when": "acceptSuggestionOnEnter && editorTextFocus && suggestWidgetVisible && suggestionMakesTextEdit"
-    }
+    },
+    {
+        "key": "ctrl+shift+/",
+        "command": "editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+a",
+        "command": "-editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+         "key": "ctrl+s",                
+         "command": "workbench.action.files.save" 
+         },
+    { 
+        "key": "ctrl+k s",              
+        "command": "workbench.action.files.saveAs" 
+        },
+    {
+        "key": "ctrl+shift+s",          
+        "command": "workbench.action.files.saveAll" 
+        }
 ]
